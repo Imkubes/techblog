@@ -15,7 +15,6 @@ Comments.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -24,7 +23,6 @@ Comments.init(
         key: "id",
       },
     },
-
     post_id: {
       type: DataTypes.INTEGER,
       allowNull: false,

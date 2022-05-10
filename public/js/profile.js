@@ -1,19 +1,20 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
+
+    console.log(event.target.value);
   
     const name = document.querySelector("#post-name").value.trim();
-    const experience_level = document.querySelector("#post-funding").value.trim();
     const description = document.querySelector("#post-desc").value.trim();
   
-    if (name && experience_level && description) {
+    if (name && description) {
       const response = await fetch(`/api/posts`, {
         method: "POST",
-        body: JSON.stringify({ name, experience_level, description }),
+        body: JSON.stringify({ name, description }),
         headers: {
           "Content-Type": "application/json",
         },
       });
-  
+
       if (response.ok) {
         document.location.replace("/profile");
       } else {

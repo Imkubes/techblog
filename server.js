@@ -37,7 +37,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // tells app to use  file in public
 // or tells app to join everything in public
-// ?
 app.use(express.static(path.join(__dirname, "public")));
 //tells app to use routes folder
 app.use(routes);
