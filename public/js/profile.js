@@ -40,7 +40,7 @@ const newFormHandler = async (event) => {
   
   document
     .querySelector(".new-post-form")
-    .addEventListener("submit", newFormHandler);
+    .addEventListener("submit", addCommentSubmit);
   
   document
     .querySelector(".post-list")
