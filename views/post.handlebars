@@ -1,0 +1,25 @@
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>
+    {{! <span for="img" aria-label="money">💲</span> }}
+    <span class="dollar-amount">{{post.experience_level}}</span>
+
+  </p>
+  {{#if logged_in}}
+  <div class="comment-area">
+    <form class="form " id="comment-form">
+      <div class="form-group">
+        <label for="gamename-input">Add Comment</label>
+        <input class="form-input" type="text" id="comment" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  {{/if}}
+
+</div>

@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Docker",
+      "description": "Docker can be used to make sure servers behave how they should. I reccomend it for most servers.",
+      "experience_level": "sys-admin"
+    },
+    {
+      "name": "The Ultimate Tech Quiz",
+      "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more! I plan to create this and am looking for collaborators, please leave a comment with your info if you would like to be involved.",
+      "experience_level": "junior-dev"
+    },
+    {
+      "name": "Paradigms of JavaScript",
+      "description": "Object Oriented Programming, Functional Programming, and Procedural Programming. It is important to understand the differences between the three and recognize when to use different methods.",
+      "experience_level": "intermediate"
+    }
+  ]
+  
