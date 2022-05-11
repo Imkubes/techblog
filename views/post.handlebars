@@ -17,11 +17,15 @@
         <button class="btn btn-primary" type="submit">Submit</button>
       </div>
     </form>
-    <p>
-      {{}}
-    </p>
   </div>
   {{/if}}
+
+  {{#each comments as |comment|}}
+  <p>
+  {{comment.contents}}
+  </p>
+
+  {{/each}}
 
 </div>
 

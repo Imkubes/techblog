@@ -14,8 +14,7 @@ const addCommentSubmit = async function (event) {
   });
 
   if (response.ok) {
-    document.location.replace("/");
-    alert('Added to the list!')
+    document.location.reload();
   } else {
     alert("Failed to post");
   }
